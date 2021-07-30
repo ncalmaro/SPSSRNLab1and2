@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>SPSS Tutorial: Data Visualization and Descriptive Stats</title>
+<title>SPSS Tutorial</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:0.1em}0%,to{top:0px}}@keyframes shudder{25%{left:0.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:0.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:0.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%, to{transform:translateX(0em)}5%, 25%, 45%{transform:translateX(-1em)}15%, 35%, 55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%, to{transform:translateY(0em)}5%, 25%, 45%{transform:translateY(-1em)}15%, 35%, 55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%, 8.1%, 82.1%, 31.1%, 38.1%, 44.1%, 40.1%, 47.1%, 74.1%, 16.1%, 27.1%, 72.1%, 24.1%, 95.1%, 6.1%, 36.1%, 20.1%, 4.1%, 91.1%, 14.1%, 87.1%, to{left:0px;top:0px}8%, 82%, 31%, 38%, 44%{left:-1px}40%, 47%, 74%, 16%, 27%{left:1px}72%, 24%, 95%, 6%, 36%{top:-1px}20%, 4%, 91%, 14%, 87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:black;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" title="' attr(title) '">'}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,0.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,0.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,0.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,0.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,0.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,0.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,0.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,0.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,0.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,0.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,0.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,0.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,0.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 0.5em 0.5em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel-source,tw-debugger .panel-row-source{font-family:monospace;overflow-x:scroll;white-space:pre;-ms-flex-preferred-size:100%;flex-basis:100%}tw-debugger .panel-row-source{margin:5px 0}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background:#EEE}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:0.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#444;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row>*{display:table-cell;padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .error-row .error-passage{color:#444}tw-debugger .storylet-row{background-color:rgba(201,233,222,0.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(128,203,178,0.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;opacity:0.4;background-color:rgba(217,217,217,0.3)}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:rgba(166,166,166,0.3)}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,0.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-debugger .resizer{position:absolute;height:3em;border-left:2px solid #ccc;border-right:2px solid #ccc;top:10px;left:4px;width:8px;cursor:ew-resize}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media (min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop ~ tw-backdrop{display:none}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage [style^="color"] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-link:hover,tw-passage [style*=" color"][hover="true"] tw-link:hover,tw-passage [style^="color"] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^="color"][hover="true"] .enchantment-link:hover,tw-passage [style*=" color"][hover="true"] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage [style^="color"] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^="color"][hover="true"] .visited:hover,tw-passage [style*=" color"][hover="true"] .visited:hover{color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage [style^="color"] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-broken-link:hover,tw-passage [style*=" color"][hover="true"] tw-broken-link:hover{color:inherit}.enchantment-mouseover{border-bottom:2px dashed #999}.enchantment-mouseout{border:rgba(64,149,191,0.6) 1px solid}.enchantment-mouseout:hover{background-color:rgba(175,197,207,0.75);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,0.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,0.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 0.5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 0.5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,0.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,0.75);border:transparent 2px solid;border-radius:0.2em}tw-link.enchantment-button,.enchantment-link.enchantment-button,.enchantment-button:not(.enchantment-link) tw-link,.enchantment-button:not(.enchantment-link) .enchantment-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media (min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:transparent;font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 0.5em}tw-story tw-noscript{animation:appear 0.8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media (min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*="width"]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:0.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:0.2}tw-icon[alt]:hover{opacity:0.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,0.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;padding:2px;white-space:pre}tw-folddown::after{content:"\25b6"}tw-folddown.open::after{content:"\25bc"}tw-open-button::after{content:"Open"}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play SPSS Tutorial: Data Visualization and Descriptive Stats.</tw-noscript></noscript></tw-story>
-<tw-storydata name="SPSS Tutorial: Data Visualization and Descriptive Stats" startnode="1" creator="Twine" creator-version="2.3.14" ifid="144643BB-5B57-4EB5-867B-F060227F2B62" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="1,531" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindow.png&quot; 
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play SPSS Tutorial.</tw-noscript></noscript></tw-story>
+<tw-storydata name="SPSS Tutorial" startnode="1" creator="Twine" creator-version="2.3.14" ifid="144643BB-5B57-4EB5-867B-F060227F2B62" zoom="1" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="1,531" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindow.png&quot; 
 alt = &quot;empty SPSS data window&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -17,10 +17,10 @@ height = &quot;660&quot;&gt;
 
 This is your SPSS data window, what would you like to do?
 (Note that if you want to do several things, just answer which you&#39;d like to do first/now.)
-[[- Import a File]]
-[[- Make a Frequency Table]]
+[[- Import a file-&gt;- Import a File]]
+[[- Make a frequency table-&gt;- Make a Frequency Table]]
 [[- Make a histogram]]
-[[- Get descriptive statistics]]</tw-passagedata><tw-passagedata pid="2" name="- Make a Frequency Table" tags="" position="129,258" size="100,100">Ok, a &#39;&#39;frequency table&#39;&#39;. 
+[[- Get descriptive statistics]]</tw-passagedata><tw-passagedata pid="2" name="- Make a Frequency Table" tags="" position="126,301" size="100,100">Ok, a &#39;&#39;frequency table&#39;&#39;. 
 
 To make a frequency table, what should you click on first? 
 (Note that clicking on a word below the picture will open up the SPSS menu for that option.)
@@ -41,7 +41,7 @@ height = &quot;660&quot;&gt;
 [[Utilities]]
 [[Extensions]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="3" name="- Make a histogram" tags="" position="124,525" size="100,100">Ok, a &#39;&#39;histogram&#39;&#39;. 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="3" name="- Make a histogram" tags="" position="122,495" size="100,100">Ok, a &#39;&#39;histogram&#39;&#39;. 
 
 To make a histogram, what should you click on first? 
 (Note that clicking on a word below the picture will open up the SPSS menu for that option.)
@@ -52,17 +52,17 @@ align = &quot;right&quot;
 width = &quot;1320&quot; 
 height = &quot;660&quot;&gt;
 
-[[File2]]
-[[Edit2]]
-[[View2]]
-[[Data2]]
-[[Transform2]]
-[[Analyze2]]
-[[Graphs2]]
-[[Utilities2]]
-[[Extensions2]]
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="4" name="- Get descriptive statistics" tags="" position="119,690" size="100,100">Ok, get &#39;&#39;descriptive statistics&#39;&#39;. 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="4" name="- Get descriptive statistics" tags="" position="127,867" size="100,100">Ok, get &#39;&#39;descriptive statistics&#39;&#39;. 
 
 To get descriptive statistics, what should you click on first? 
 (Note that clicking on a word below the picture will open up the SPSS menu for that option.)
@@ -73,17 +73,17 @@ align = &quot;right&quot;
 width = &quot;1320&quot; 
 height = &quot;660&quot;&gt;
 
-[[File4]]
-[[Edit4]]
-[[View4]]
-[[Data4]]
-[[Transform4]]
-[[Analyze4]]
-[[Graphs4]]
-[[Utilities4]]
-[[Extensions4]]
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="5" name="File" tags="" position="255,234" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenu.png&quot; 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="5" name="File" tags="" position="249,249" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenu.png&quot; 
 alt = &quot;empty SPSS data window with file menu open&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -102,7 +102,7 @@ No, instead go to:
 [[Utilities]]
 [[Extensions]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="6" name="Edit" tags="" position="383,234" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowEditMenu.png&quot; 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="6" name="Edit" tags="" position="364,249" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowEditMenu.png&quot; 
 alt = &quot;empty SPSS data window with edit menu open&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -121,7 +121,7 @@ No, instead go to:
 [[Utilities]]
 [[Extensions]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="7" name="View" tags="" position="513,232" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowViewMenu.png&quot; 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="7" name="View" tags="" position="478,248" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowViewMenu.png&quot; 
 alt = &quot;empty SPSS data window with view menu open&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -140,7 +140,7 @@ No, instead go to:
 [[Utilities]]
 [[Extensions]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="8" name="Data" tags="" position="634,233" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowDataMenu.png&quot; 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="8" name="Data" tags="" position="594,247" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowDataMenu.png&quot; 
 alt = &quot;empty SPSS data window with data menu open&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -159,7 +159,7 @@ No, instead go to:
 [[Utilities]]
 [[Extensions]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="9" name="Transform" tags="" position="755,234" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowTransformMenu.png&quot; 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="9" name="Transform" tags="" position="712,237" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowTransformMenu.png&quot; 
 alt = &quot;empty SPSS data window with transform menu open&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -178,7 +178,7 @@ No, instead go to:
 [[Utilities]]
 [[Extensions]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="10" name="Analyze" tags="" position="871,236" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="10" name="Analyze" tags="" position="828,239" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
 alt = &quot;empty SPSS data window with analyze menu open&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -197,7 +197,7 @@ No, instead go to:
 [[Utilities]]
 [[Extensions]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="11" name="Graphs" tags="" position="982,233" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="11" name="Graphs" tags="" position="939,236" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
 alt = &quot;empty SPSS data window with graphs menu open&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -216,7 +216,7 @@ No, instead go to:
 [[Utilities]]
 [[Extensions]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="12" name="Utilities" tags="" position="1094,234" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowUtilitiesMenu.png&quot; 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="12" name="Utilities" tags="" position="1056,236" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowUtilitiesMenu.png&quot; 
 alt = &quot;empty SPSS data window with utilities menu open&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -235,7 +235,7 @@ No, instead go to:
 [[Graphs]]
 [[Extensions]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="13" name="Extensions" tags="" position="1207,233" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowExtensionsMenu.png&quot; 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="13" name="Extensions" tags="" position="1169,235" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowExtensionsMenu.png&quot; 
 alt = &quot;empty SPSS data window with extensions menu open&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -254,7 +254,178 @@ No, instead go to:
 [[Graphs]]
 [[Utilities]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="14" name="File2" tags="" position="243,496" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="15" name="Edit2" tags="" position="353,495" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="16" name="View2" tags="" position="468,494" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="Data2" tags="" position="581,496" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name="Transform2" tags="" position="702,495" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="19" name="Analyze2" tags="" position="812,495" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="20" name="Graphs2" tags="" position="926,495" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Utilities2" tags="" position="1046,495" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="Extensions2" tags="" position="1166,495" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="23" name="Yes, I see what I need to click on next." tags="" position="249,347" size="100,100">Sorry, your next step isn&#39;t here! 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="14" name="File2" tags="" position="243,496" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenu.png&quot; 
+alt = &quot;empty SPSS data window with file menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;Yes17]]
+
+No, instead go to: 
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="15" name="Edit2" tags="" position="362,496" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowEditMenu.png&quot; 
+alt = &quot;empty SPSS data window with edit menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;Yes18]]
+
+No, instead go to: 
+[[File-&gt;File2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="16" name="View2" tags="" position="477,495" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowViewMenu.png&quot; 
+alt = &quot;empty SPSS data window with view menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;Yes19]]
+
+No, instead go to: 
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="17" name="Data2" tags="" position="588,494" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowDataMenu.png&quot; 
+alt = &quot;empty SPSS data window with data menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes20]]
+
+No, instead go to: 
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="18" name="Transform2" tags="" position="711,494" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowTransformMenu.png&quot; 
+alt = &quot;empty SPSS data window with transform menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes21]]
+
+No, instead go to: 
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="19" name="Analyze2" tags="" position="824,494" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes22]]
+
+No, instead go to: 
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]] 
+[[Transform-&gt;Transform2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="20" name="Graphs2" tags="" position="940,493" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; YesGraphs]]
+
+No, instead go to: 
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="21" name="Utilities2" tags="" position="1058,495" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowUtilitiesMenu.png&quot; 
+alt = &quot;empty SPSS data window with utilities menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes23]]
+
+No, instead go to: 
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]] 
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Extensions-&gt;Extensions2]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="22" name="Extensions2" tags="" position="1177,491" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowExtensionsMenu.png&quot; 
+alt = &quot;empty SPSS data window with extensions menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes24]]
+
+No, instead go to: 
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]] 
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="23" name="Yes, I see what I need to click on next." tags="" position="246,353" size="100,100">Sorry, your next step isn&#39;t here! 
 
 Learning SPSS is a process.
 
@@ -272,7 +443,7 @@ height = &quot;660&quot;&gt;
 [[Analyze]]
 [[Graphs]]
 [[Utilities]]
-[[Extensions]]</tw-passagedata><tw-passagedata pid="24" name=" Yes2" tags="" position="378,346" size="100,100">Sorry, your next step isn&#39;t here! 
+[[Extensions]]</tw-passagedata><tw-passagedata pid="24" name=" Yes2" tags="" position="366,356" size="100,100">Sorry, your next step isn&#39;t here! 
 
 Learning SPSS is a process.
 
@@ -290,7 +461,7 @@ height = &quot;660&quot;&gt;
 [[Analyze]]
 [[Graphs]]
 [[Utilities]]
-[[Extensions]]</tw-passagedata><tw-passagedata pid="25" name=" Yes3" tags="" position="516,345" size="100,100">Sorry, your next step isn&#39;t here! 
+[[Extensions]]</tw-passagedata><tw-passagedata pid="25" name=" Yes3" tags="" position="480,357" size="100,100">Sorry, your next step isn&#39;t here! 
 
 Learning SPSS is a process.
 
@@ -308,7 +479,7 @@ height = &quot;660&quot;&gt;
 [[Analyze]]
 [[Graphs]]
 [[Utilities]]
-[[Extensions]]</tw-passagedata><tw-passagedata pid="26" name="- Import a File" tags="" position="113,2" size="100,100">Ok, &#39;&#39;importing a file&#39;&#39;. 
+[[Extensions]]</tw-passagedata><tw-passagedata pid="26" name="- Import a File" tags="" position="128,38" size="100,100">Ok, &#39;&#39;importing a file&#39;&#39;. 
 
 To import a file, what should you click on first? 
 (Note that clicking on a word below the picture will open up the SPSS menu for that option.)
@@ -319,17 +490,17 @@ align = &quot;right&quot;
 width = &quot;1320&quot; 
 height = &quot;660&quot;&gt;
 
-[[File3]]
-[[Edit3]]
-[[View3]]
-[[Data3]]
-[[Transform3]]
-[[Analyze3]]
-[[Graphs3]]
-[[Utilities3]]
-[[Extensions3]]
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]]
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="27" name="File3" tags="" position="250,2" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenu.png&quot; 
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="27" name="File3" tags="" position="255,7" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenu.png&quot; 
 alt = &quot;empty SPSS data window with file menu open&quot; 
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
@@ -339,16 +510,339 @@ Is this right?
 [[Yes, I see what I need to click on next.-&gt;YesImport]]
 
 No, instead go to: 
-[[Edit3]]
-[[View3]]
-[[Data3]]
-[[Transform3]]
-[[Analyze3]]
-[[Graphs3]]
-[[Utilities3]]
-[[Extensions3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]]
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]
 
-[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="28" name="Edit3" tags="" position="359,4" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="29" name="View3" tags="" position="474,4" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="30" name="Data3" tags="" position="593,1" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="31" name="Transform3" tags="" position="700,1" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="32" name="Analyze3" tags="" position="820,0" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="Graphs3" tags="" position="948,0" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="Utilities3" tags="" position="1078,0" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="35" name="Extensions3" tags="" position="1199,0" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="36" name="File4" tags="" position="244,737" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="37" name="Edit4" tags="" position="365,741" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="38" name="View4" tags="" position="480,741" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="39" name="Data4" tags="" position="599,734" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="40" name="Transform4" tags="" position="706,735" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="Analyze4" tags="" position="810,733" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="42" name="Graphs4" tags="" position="930,734" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="43" name="Utilities4" tags="" position="1051,731" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="44" name="Extensions4" tags="" position="1177,733" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="45" name="YesImport" tags="" position="174,130" size="100,100">That&#39;s right!
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="28" name="Edit3" tags="" position="369,5" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowEditMenu.png&quot; 
+alt = &quot;empty SPSS data window with edit menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes9]]
+
+No, instead go to: 
+[[File-&gt;File3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]]
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="29" name="View3" tags="" position="484,5" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowViewMenu.png&quot; 
+alt = &quot;empty SPSS data window with view menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes10]]
+
+No, instead go to: 
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[Data-&gt;Data3]]
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="30" name="Data3" tags="" position="598,6" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowDataMenu.png&quot; 
+alt = &quot;empty SPSS data window with data menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes11]]
+
+No, instead go to: 
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="31" name="Transform3" tags="" position="710,5" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowTransformMenu.png&quot; 
+alt = &quot;empty SPSS data window with transform menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes12]]
+
+No, instead go to: 
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="32" name="Analyze3" tags="" position="826,5" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes13]]
+
+No, instead go to: 
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]] 
+[[Transform-&gt;Transform3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="33" name="Graphs3" tags="" position="939,5" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes14]]
+
+No, instead go to: 
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]] 
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="34" name="Utilities3" tags="" position="1052,6" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowUtilitiesMenu.png&quot; 
+alt = &quot;empty SPSS data window with utilities menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes15]]
+
+No, instead go to: 
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]] 
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Extensions-&gt;Extensions3]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="35" name="Extensions3" tags="" position="1164,6" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowExtensionsMenu.png&quot; 
+alt = &quot;empty SPSS data window with extensions menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes16]]
+
+No, instead go to: 
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]] 
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="36" name="File4" tags="" position="249,837" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenu.png&quot; 
+alt = &quot;empty SPSS data window with file menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;Yes25]]
+
+No, instead go to: 
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="37" name="Edit4" tags="" position="366,838" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowEditMenu.png&quot; 
+alt = &quot;empty SPSS data window with edit menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;Yes26]]
+
+No, instead go to: 
+[[File-&gt;File4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="38" name="View4" tags="" position="478,839" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowViewMenu.png&quot; 
+alt = &quot;empty SPSS data window with view menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;Yes27]]
+
+No, instead go to: 
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[Data-&gt;Data4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="39" name="Data4" tags="" position="588,840" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowDataMenu.png&quot; 
+alt = &quot;empty SPSS data window with data menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes28]]
+
+No, instead go to: 
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="40" name="Transform4" tags="" position="704,840" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowTransformMenu.png&quot; 
+alt = &quot;empty SPSS data window with transform menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes29]]
+
+No, instead go to: 
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="41" name="Analyze4" tags="" position="824,837" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes30]]
+
+No, instead go to: 
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]] 
+[[Transform-&gt;Transform4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="42" name="Graphs4" tags="" position="941,836" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes31]]
+
+No, instead go to: 
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="43" name="Utilities4" tags="" position="1068,834" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowUtilitiesMenu.png&quot; 
+alt = &quot;empty SPSS data window with utilities menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes32]]
+
+No, instead go to: 
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]] 
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Extensions-&gt;Extensions4]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="44" name="Extensions4" tags="" position="1184,835" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowExtensionsMenu.png&quot; 
+alt = &quot;empty SPSS data window with extensions menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next. -&gt; Yes33]]
+
+No, instead go to: 
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]] 
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="45" name="YesImport" tags="" position="257,143" size="100,100">That&#39;s right!
 
 What do you want to click on next?
 
@@ -357,7 +851,11 @@ alt = &quot;empty SPSS data window with file menu open&quot;
 align = &quot;right&quot; 
 width = &quot;1320&quot; 
 height = &quot;660&quot;&gt;
-</tw-passagedata><tw-passagedata pid="46" name=" Yes4" tags="" position="640,348" size="100,100">Sorry, your next step isn&#39;t here! 
+
+[[New]]
+[[Open]]
+[[Import Data]]
+</tw-passagedata><tw-passagedata pid="46" name=" Yes4" tags="" position="593,356" size="100,100">Sorry, your next step isn&#39;t here! 
 
 Learning SPSS is a process.
 
@@ -375,7 +873,7 @@ height = &quot;660&quot;&gt;
 [[Analyze]]
 [[Graphs]]
 [[Utilities]]
-[[Extensions]]</tw-passagedata><tw-passagedata pid="47" name=" Yes5" tags="" position="757,345" size="100,100">Sorry, your next step isn&#39;t here! 
+[[Extensions]]</tw-passagedata><tw-passagedata pid="47" name=" Yes5" tags="" position="714,348" size="100,100">Sorry, your next step isn&#39;t here! 
 
 Learning SPSS is a process.
 
@@ -393,9 +891,26 @@ height = &quot;660&quot;&gt;
 [[Analyze]]
 [[Graphs]]
 [[Utilities]]
-[[Extensions]]</tw-passagedata><tw-passagedata pid="48" name=" YesAnalyze" tags="" position="873,386" size="100,100">That&#39;s right!
+[[Extensions]]</tw-passagedata><tw-passagedata pid="48" name=" YesAnalyze" tags="" position="828,375" size="100,100">That&#39;s right!
 
-What do you want to click on next?</tw-passagedata><tw-passagedata pid="49" name=" Yes6" tags="" position="986,342" size="100,100">Sorry, your next step isn&#39;t here! 
+What do you want to click on next?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis]]
+[[Reports]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Tables]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="49" name=" Yes6" tags="" position="943,345" size="100,100">Sorry, your next step isn&#39;t here! 
 
 Learning SPSS is a process.
 
@@ -413,7 +928,7 @@ height = &quot;660&quot;&gt;
 [[Transform]]
 [[Analyze]]
 [[Utilities]]
-[[Extensions]]</tw-passagedata><tw-passagedata pid="50" name=" Yes7" tags="" position="1098,341" size="100,100">Sorry, your next step isn&#39;t here! 
+[[Extensions]]</tw-passagedata><tw-passagedata pid="50" name=" Yes7" tags="" position="1060,343" size="100,100">Sorry, your next step isn&#39;t here! 
 
 Learning SPSS is a process.
 
@@ -431,7 +946,7 @@ height = &quot;660&quot;&gt;
 [[Transform]]
 [[Analyze]]
 [[Graphs]]
-[[Extensions]]</tw-passagedata><tw-passagedata pid="51" name=" Yes8" tags="" position="1208,340" size="100,100">Sorry, your next step isn&#39;t here! 
+[[Extensions]]</tw-passagedata><tw-passagedata pid="51" name=" Yes8" tags="" position="1170,342" size="100,100">Sorry, your next step isn&#39;t here! 
 
 Learning SPSS is a process.
 
@@ -449,7 +964,1860 @@ height = &quot;660&quot;&gt;
 [[Transform]]
 [[Analyze]]
 [[Graphs]]
-[[Utilities]]</tw-passagedata></tw-storydata>
+[[Utilities]]</tw-passagedata><tw-passagedata pid="52" name=" Yes9" tags="" position="364,109" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]]
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]</tw-passagedata><tw-passagedata pid="53" name=" Yes10" tags="" position="481,110" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[Data-&gt;Data3]]
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]</tw-passagedata><tw-passagedata pid="54" name=" Yes11" tags="" position="599,110" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]</tw-passagedata><tw-passagedata pid="55" name=" Yes12" tags="" position="711,107" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]
+</tw-passagedata><tw-passagedata pid="56" name=" Yes13" tags="" position="821,108" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]] 
+[[Transform-&gt;Transform3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]</tw-passagedata><tw-passagedata pid="57" name=" Yes14" tags="" position="941,109" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]] 
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Utilities-&gt;Utilities3]]
+[[Extensions-&gt;Extensions3]]</tw-passagedata><tw-passagedata pid="58" name=" Yes15" tags="" position="1054,107" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]] 
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Extensions-&gt;Extensions3]]</tw-passagedata><tw-passagedata pid="59" name=" Yes16" tags="" position="1161,111" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File3]]
+[[Edit-&gt;Edit3]]
+[[View-&gt;View3]]
+[[Data-&gt;Data3]] 
+[[Transform-&gt;Transform3]]
+[[Analyze-&gt;Analyze3]]
+[[Graphs-&gt;Graphs3]]
+[[Utilities-&gt;Utilities3]]
+</tw-passagedata><tw-passagedata pid="60" name="Yes17" tags="" position="243,603" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]</tw-passagedata><tw-passagedata pid="61" name="Yes18" tags="" position="366,605" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]</tw-passagedata><tw-passagedata pid="62" name="Yes19" tags="" position="477,606" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]</tw-passagedata><tw-passagedata pid="63" name="New" tags="" position="1373,7" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenuNew.png&quot; 
+alt = &quot;empty SPSS data window with file menu open and new sub-menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;YesNew]]
+
+No, instead go to: 
+[[Open]]
+[[Import Data]]</tw-passagedata><tw-passagedata pid="64" name="Open" tags="" position="1495,9" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenuOpen.png&quot; 
+alt = &quot;empty SPSS data window with file menu open and open sub-menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;YesOpen]]
+
+No, instead go to: 
+[[New]]
+[[Import Data]]</tw-passagedata><tw-passagedata pid="65" name="Import Data" tags="" position="1617,8" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenuImportData.png&quot; 
+alt = &quot;empty SPSS data window with file menu open and import data sub-menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;YesImportData]]
+
+No, instead go to: 
+[[New]]
+[[Open]]</tw-passagedata><tw-passagedata pid="66" name="YesNew" tags="" position="1373,112" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenu.png&quot; 
+alt = &quot;empty SPSS data window with file menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Open]]
+[[Import Data]]</tw-passagedata><tw-passagedata pid="67" name="YesOpen" tags="" position="1497,113" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenu.png&quot; 
+alt = &quot;empty SPSS data window with file menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[New]]
+[[Import Data]]</tw-passagedata><tw-passagedata pid="68" name="YesImportData" tags="" position="1727,122" size="100,100">Yes!
+
+What&#39;s next?
+&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenuImportData.png&quot; 
+alt = &quot;empty SPSS data window with file menu open and import data sub-menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Database]]
+[[Excel]]
+[[CSV Data]]
+[[Text Data]]
+[[SAS]]
+[[Stata]]</tw-passagedata><tw-passagedata pid="69" name="Database" tags="" position="1765,2" size="100,100">Sorry, your next step isn&#39;t here! 
+
+You&#39;re so close-- 
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenuImportData.png&quot; 
+alt = &quot;empty SPSS data window with file menu open and import data sub-menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Excel]]
+[[CSV Data]]
+[[Text Data]]
+[[SAS]]
+[[Stata]]</tw-passagedata><tw-passagedata pid="70" name="Excel" tags="" position="1874,2" size="100,100">That&#39;s right! You&#39;ve imported your data!
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2Data.png&quot; 
+alt = &quot;SPSS data window with data&quot; 
+align = &quot;right&quot; 
+width = &quot;720&quot; 
+height = &quot;660&quot;&gt;
+
+
+Take a screenshot and paste this into your lab to submit!
+
+
+Then, [[move on to the next step-&gt;Start]] if you have more to do!</tw-passagedata><tw-passagedata pid="71" name="CSV Data" tags="" position="1979,2" size="100,100">Sorry, your next step isn&#39;t here! 
+
+You&#39;re so close-- 
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenuImportData.png&quot; 
+alt = &quot;empty SPSS data window with file menu open and import data sub-menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Database]]
+[[Excel]]
+[[Text Data]]
+[[SAS]]
+[[Stata]]</tw-passagedata><tw-passagedata pid="72" name="Text Data" tags="" position="2084,2" size="100,100">Sorry, your next step isn&#39;t here! 
+
+You&#39;re so close-- 
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenuImportData.png&quot; 
+alt = &quot;empty SPSS data window with file menu open and import data sub-menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Database]]
+[[Excel]]
+[[CSV Data]]
+[[SAS]]
+[[Stata]]</tw-passagedata><tw-passagedata pid="73" name="SAS" tags="" position="2191,2" size="100,100">Sorry, your next step isn&#39;t here! 
+
+You&#39;re so close-- 
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenuImportData.png&quot; 
+alt = &quot;empty SPSS data window with file menu open and import data sub-menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Database]]
+[[Excel]]
+[[CSV Data]]
+[[Text Data]]
+[[Stata]]</tw-passagedata><tw-passagedata pid="74" name="Stata" tags="" position="2295,2" size="100,100">Sorry, your next step isn&#39;t here! 
+
+You&#39;re so close-- 
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowFileMenuImportData.png&quot; 
+alt = &quot;empty SPSS data window with file menu open and import data sub-menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Database]]
+[[Excel]]
+[[CSV Data]]
+[[Text Data]]
+[[SAS]]</tw-passagedata><tw-passagedata pid="75" name="Power Analysis" tags="" position="1368,273" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Reports]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Tables]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="76" name="Reports" tags="" position="1474,272" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Tables]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="77" name="Descriptive Statistics" tags="" position="1578,304" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;YesDSFreq]]
+
+No, instead go to: 
+[[Power Analysis]]
+[[Reports]]
+[[Bayesian Statistics]]
+[[Tables]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="78" name="Bayesian Statistics" tags="" position="1684,266" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis]]
+[[Reports]]
+[[Descriptive Statistics]]
+[[Tables]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="79" name="Tables" tags="" position="1789,262" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuTables.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and Tables sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;YesTables]]
+
+No, instead go to: 
+[[Power Analysis]]
+[[Reports]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="80" name="Compare Means" tags="" position="1899,263" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis]]
+[[Reports]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Tables]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="81" name="General Linear Model" tags="" position="2008,264" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis]]
+[[Reports]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Tables]]
+[[Compare Means]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="82" name="Generalized Linear Models" tags="" position="2116,261" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis]]
+[[Reports]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Tables]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Mixed Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="83" name="Mixed Models" tags="" position="2222,258" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis]]
+[[Reports]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Tables]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="84" name="Correlate" tags="" position="2328,258" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis]]
+[[Reports]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Tables]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="85" name="Regression" tags="" position="2434,257" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis]]
+[[Reports]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Tables]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Correlate]]</tw-passagedata><tw-passagedata pid="86" name="YesDSFreq" tags="" position="1586,430" size="100,100">Yes!
+
+What&#39;s next?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies]]
+[[Descriptives]]
+[[Explore]]
+[[Crosstabs]]
+[[TURF Analysis]]
+[[Ratio]]
+[[P-P Plots]]
+[[Q-Q Plots]]</tw-passagedata><tw-passagedata pid="87" name="Correlation" tags="" position="122.5,1389" size="100,100">Ok, complete a &#39;&#39;correlation&#39;&#39;. 
+
+To complete a correlation, what should you click on first? 
+(Note that clicking on a word below the picture will open up the SPSS menu for that option.)
+
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File5]]
+[[Edit-&gt;Edit5]]
+[[View-&gt;View5]]
+[[Data-&gt;Data5]]
+[[Transform-&gt;Transform5]]
+[[Analyze-&gt;Analyze5]]
+[[Graphs-&gt;Graphs5]]
+[[Utilities-&gt;Utilities5]]
+[[Extensions-&gt;Extensions5]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="88" name="Frequencies" tags="" position="2431,415" size="100,100">That&#39;s right!
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2DataFrequenciesMenu.png&quot; 
+alt = &quot;SPSS data window with data and Frequencies menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Which variable would you like to move to the &quot;Variable(s)&quot; section?
+[[PairID]]
+[[BirthOrder]]
+[[CC_SurfaceArea]]
+[[IQ_FullScale]]
+[[HeadCircumference]]</tw-passagedata><tw-passagedata pid="89" name="Descriptives" tags="" position="2532,395" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies]]
+[[Explore]]
+[[Crosstabs]]
+[[TURF Analysis]]
+[[Ratio]]
+[[P-P Plots]]
+[[Q-Q Plots]]</tw-passagedata><tw-passagedata pid="90" name="Explore" tags="" position="2636,395" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies]]
+[[Descriptives]]
+[[Crosstabs]]
+[[TURF Analysis]]
+[[Ratio]]
+[[P-P Plots]]
+[[Q-Q Plots]]</tw-passagedata><tw-passagedata pid="91" name="Crosstabs" tags="" position="2741,396" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies]]
+[[Descriptives]]
+[[Explore]]
+[[TURF Analysis]]
+[[Ratio]]
+[[P-P Plots]]
+[[Q-Q Plots]]</tw-passagedata><tw-passagedata pid="92" name="TURF Analysis" tags="" position="2847,394" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies]]
+[[Descriptives]]
+[[Explore]]
+[[Crosstabs]]
+[[Ratio]]
+[[P-P Plots]]
+[[Q-Q Plots]]</tw-passagedata><tw-passagedata pid="93" name="Ratio" tags="" position="2952,396" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies]]
+[[Descriptives]]
+[[Explore]]
+[[Crosstabs]]
+[[TURF Analysis]]
+[[P-P Plots]]
+[[Q-Q Plots]]</tw-passagedata><tw-passagedata pid="94" name="P-P Plots" tags="" position="3057,396" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies]]
+[[Descriptives]]
+[[Explore]]
+[[Crosstabs]]
+[[TURF Analysis]]
+[[Ratio]]
+[[Q-Q Plots]]</tw-passagedata><tw-passagedata pid="95" name="Q-Q Plots" tags="" position="3166,394" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies]]
+[[Descriptives]]
+[[Explore]]
+[[Crosstabs]]
+[[TURF Analysis]]
+[[Ratio]]
+[[P-P Plots]]</tw-passagedata><tw-passagedata pid="96" name="YesTables" tags="" position="1999,393" size="100,100">Sorry, your next step isn&#39;t here! 
+
+You&#39;re so close-- 
+
+What do you want to try instead?
+[[Power Analysis]]
+[[Reports]]
+[[Descriptive Statistics]]
+[[Bayesian Statistics]]
+[[Compare Means]]
+[[General Linear Model]]
+[[Generalized Linear Models]]
+[[Mixed Models]]
+[[Correlate]]
+[[Regression]]</tw-passagedata><tw-passagedata pid="97" name="PairID" tags="" position="2257,526" size="100,100">Try again: 
+
+Which variable would you like to move to the &quot;Variable(s)&quot; section?
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2DataFrequenciesMenu.png&quot; 
+alt = &quot;SPSS data window with data and Frequencies menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+[[BirthOrder]]
+[[CC_SurfaceArea]]
+[[IQ_FullScale]]
+[[HeadCircumference]]</tw-passagedata><tw-passagedata pid="98" name="BirthOrder" tags="" position="2373,525" size="100,100">Try again: 
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2DataFrequenciesMenu.png&quot; 
+alt = &quot;SPSS data window with data and Frequencies menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+[[PairID]]
+[[CC_SurfaceArea]]
+[[IQ_FullScale]]
+[[HeadCircumference]]</tw-passagedata><tw-passagedata pid="99" name="CC_SurfaceArea" tags="" position="2487,539" size="100,100">You&#39;ve made a frequency table!
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2OutputSurfaceArea.png&quot; 
+alt = &quot;SPSS data window with data&quot; 
+align = &quot;right&quot; 
+width = &quot;1075&quot; 
+height = &quot;660&quot;&gt;
+
+
+Double check to make sure you used the correct variable. 
+If this looks right to you, take a screenshot and paste this into your lab to submit!
+Then, [[move on to the next step-&gt;Start]] if you have more to do!
+
+If this doesn&#39;t look right or you used the wrong variable, select a different variable: 
+[[PairID]]
+[[BirthOrder]]
+[[IQ_FullScale]]
+[[HeadCircumference]]</tw-passagedata><tw-passagedata pid="100" name="IQ_FullScale" tags="" position="2594,539" size="100,100">You&#39;ve made a frequency table!
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2OutputIQ.png&quot; 
+alt = &quot;SPSS data window with data&quot; 
+align = &quot;right&quot; 
+width = &quot;1075&quot; 
+height = &quot;660&quot;&gt;
+
+
+Double check to make sure you used the correct variable. 
+If this looks right to you, take a screenshot and paste this into your lab to submit!
+Then, [[move on to the next step-&gt;Start]] if you have more to do!
+
+If this doesn&#39;t look right or you used the wrong variable, select a different variable: 
+[[PairID]]
+[[BirthOrder]]
+[[CC_SurfaceArea]]
+[[HeadCircumference]]</tw-passagedata><tw-passagedata pid="101" name="HeadCircumference" tags="" position="2697,539" size="100,100">You&#39;ve made a frequency table!
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2OutputHeadCircumference.png&quot; 
+alt = &quot;SPSS data window with data&quot; 
+align = &quot;right&quot; 
+width = &quot;1075&quot; 
+height = &quot;660&quot;&gt;
+
+
+Double check to make sure you used the correct variable. 
+If this looks right to you, take a screenshot and paste this into your lab to submit!
+Then, [[move on to the next step-&gt;Start]] if you have more to do!
+
+If this doesn&#39;t look right or you used the wrong variable, select a different variable: 
+[[PairID]]
+[[BirthOrder]]
+[[IQ_FullScale]]
+[[CC_SurfaceArea]] </tw-passagedata><tw-passagedata pid="102" name=" Yes20" tags="" position="590,605" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]</tw-passagedata><tw-passagedata pid="103" name=" Yes21" tags="" position="708,605" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]</tw-passagedata><tw-passagedata pid="104" name=" Yes22" tags="" position="824,602" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]
+[[Extensions-&gt;Extensions2]]</tw-passagedata><tw-passagedata pid="105" name=" Yes23" tags="" position="1060,603" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Extensions-&gt;Extensions2]]</tw-passagedata><tw-passagedata pid="106" name=" Yes24" tags="" position="1182,602" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File2]]
+[[Edit-&gt;Edit2]]
+[[View-&gt;View2]]
+[[Data-&gt;Data2]]
+[[Transform-&gt;Transform2]]
+[[Analyze-&gt;Analyze2]]
+[[Graphs-&gt;Graphs2]]
+[[Utilities-&gt;Utilities2]]</tw-passagedata><tw-passagedata pid="107" name=" YesGraphs" tags="" position="942,648" size="100,100">That&#39;s right!
+
+What do you want to click on next?
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Chart Builder]]
+[[Graphboard Template Chooser]]
+[[Weibull Plot]]
+[[Compare Subgroups]]
+[[Regression Variable Plots]]
+[[Legacy Dialogs]]</tw-passagedata><tw-passagedata pid="108" name="Chart Builder" tags="" position="1375,665" size="100,100">This feels like the most obvious answer, but this actually isn&#39;t correct...
+
+You&#39;re almost there-- try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Graphboard Template Chooser]]
+[[Weibull Plot]]
+[[Compare Subgroups]]
+[[Regression Variable Plots]]
+[[Legacy Dialogs]]</tw-passagedata><tw-passagedata pid="109" name="Graphboard Template Chooser" tags="" position="1483,664" size="100,100">This sounds like it could be right, but this actually isn&#39;t correct...
+
+You&#39;re almost there-- try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Chart Builder]]
+[[Weibull Plot]]
+[[Compare Subgroups]]
+[[Regression Variable Plots]]
+[[Legacy Dialogs]]</tw-passagedata><tw-passagedata pid="110" name="Weibull Plot" tags="" position="1591,664" size="100,100">Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Chart Builder]]
+[[Graphboard Template Chooser]]
+[[Compare Subgroups]]
+[[Regression Variable Plots]]
+[[Legacy Dialogs]]</tw-passagedata><tw-passagedata pid="111" name="Compare Subgroups" tags="" position="1700,664" size="100,100">Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Chart Builder]]
+[[Graphboard Template Chooser]]
+[[Weibull Plot]]
+[[Regression Variable Plots]]
+[[Legacy Dialogs]]</tw-passagedata><tw-passagedata pid="112" name="Regression Variable Plots" tags="" position="1811,667" size="100,100">Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenu.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Chart Builder]]
+[[Graphboard Template Chooser]]
+[[Weibull Plot]]
+[[Compare Subgroups]]
+[[Legacy Dialogs]]</tw-passagedata><tw-passagedata pid="113" name="Legacy Dialogs" tags="" position="1922,670" size="100,100">Yes!
+
+What&#39;s next?
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Bar]]
+[[3-D Bar]]
+[[Line]]
+[[Area]]
+[[Pie]]
+[[High-Low]]
+[[Boxplot]]
+[[Error Bar]]
+[[Population Pyramid]]
+[[Scatter/Dot]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="114" name="Bar" tags="" position="1549,819" size="100,100">This isn&#39;t the right choice for this question. 
+
+You&#39;re almost there! 
+Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[3-D Bar]]
+[[Line]]
+[[Area]]
+[[Pie]]
+[[High-Low]]
+[[Boxplot]]
+[[Error Bar]]
+[[Population Pyramid]]
+[[Scatter/Dot]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="115" name="3-D Bar" tags="" position="1655,822" size="100,100">This isn&#39;t the right choice for this question. 
+
+You&#39;re almost there! 
+Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Bar]]
+[[Line]]
+[[Area]]
+[[Pie]]
+[[High-Low]]
+[[Boxplot]]
+[[Error Bar]]
+[[Population Pyramid]]
+[[Scatter/Dot]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="116" name="Line" tags="" position="1763,817" size="100,100">This isn&#39;t the right choice for this question. 
+
+You&#39;re almost there! 
+Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Bar]]
+[[3-D Bar]]
+[[Area]]
+[[Pie]]
+[[High-Low]]
+[[Boxplot]]
+[[Error Bar]]
+[[Population Pyramid]]
+[[Scatter/Dot]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="117" name="Area" tags="" position="1869,817" size="100,100">This isn&#39;t the right choice for this question. 
+
+You&#39;re almost there! 
+Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Bar]]
+[[3-D Bar]]
+[[Line]]
+[[Pie]]
+[[High-Low]]
+[[Boxplot]]
+[[Error Bar]]
+[[Population Pyramid]]
+[[Scatter/Dot]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="118" name="Pie" tags="" position="1972,819" size="100,100">This isn&#39;t the right choice for this question. 
+
+You&#39;re almost there! 
+Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Bar]]
+[[3-D Bar]]
+[[Line]]
+[[Area]]
+[[High-Low]]
+[[Boxplot]]
+[[Error Bar]]
+[[Population Pyramid]]
+[[Scatter/Dot]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="119" name="High-Low" tags="" position="2075,819" size="100,100">This isn&#39;t the right choice for this question. 
+
+You&#39;re almost there! 
+Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Bar]]
+[[3-D Bar]]
+[[Line]]
+[[Area]]
+[[Pie]]
+[[Boxplot]]
+[[Error Bar]]
+[[Population Pyramid]]
+[[Scatter/Dot]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="120" name="Boxplot" tags="" position="2182,818" size="100,100">This isn&#39;t the right choice for this question. 
+
+You&#39;re almost there! 
+Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Bar]]
+[[3-D Bar]]
+[[Line]]
+[[Area]]
+[[Pie]]
+[[High-Low]]
+[[Error Bar]]
+[[Population Pyramid]]
+[[Scatter/Dot]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="121" name="Error Bar" tags="" position="2291,818" size="100,100">This isn&#39;t the right choice for this question. 
+
+You&#39;re almost there! 
+Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Bar]]
+[[3-D Bar]]
+[[Line]]
+[[Area]]
+[[Pie]]
+[[High-Low]]
+[[Boxplot]]
+[[Population Pyramid]]
+[[Scatter/Dot]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="122" name="Population Pyramid" tags="" position="2400,816" size="100,100">This isn&#39;t the right choice for this question. 
+
+You&#39;re almost there! 
+Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Bar]]
+[[3-D Bar]]
+[[Line]]
+[[Area]]
+[[Pie]]
+[[High-Low]]
+[[Boxplot]]
+[[Error Bar]]
+[[Scatter/Dot]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="123" name="Scatter/Dot" tags="" position="2514,814" size="100,100">This isn&#39;t the right choice for this question. 
+
+You&#39;re almost there! 
+Try again: 
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogs.png&quot; 
+alt = &quot;empty SPSS data window with graphs menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Bar]]
+[[3-D Bar]]
+[[Line]]
+[[Area]]
+[[Pie]]
+[[High-Low]]
+[[Boxplot]]
+[[Error Bar]]
+[[Population Pyramid]]
+[[Histogram]]</tw-passagedata><tw-passagedata pid="124" name="Histogram" tags="" position="2631,814" size="100,100">That&#39;s right!
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogsHistogramMenu.png&quot; 
+alt = &quot;SPSS data window with data and Histogram menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Which variable would you like to move to the &quot;Variable(s)&quot; section?
+[[PairID2]]
+[[BirthOrder2]]
+[[CC_SurfaceArea2]]
+[[IQ_FullScale2]]
+[[HeadCircumference2]]</tw-passagedata><tw-passagedata pid="125" name="PairID2" tags="" position="2455,917" size="100,100">Try again: 
+
+Which variable would you like to move to the &quot;Variable(s)&quot; section?
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogsHistogramMenu.png&quot; 
+alt = &quot;SPSS data window with data and Histogram menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Which variable would you like to move to the &quot;Variable(s)&quot; section?
+[[BirthOrder2]]
+[[CC_SurfaceArea2]]
+[[IQ_FullScale2]]
+[[HeadCircumference2]]</tw-passagedata><tw-passagedata pid="126" name="BirthOrder2" tags="" position="2560,915" size="100,100">Try again: 
+
+Which variable would you like to move to the &quot;Variable(s)&quot; section?
+&lt;img src=&quot;SPSSaltEmptyDataWindowGraphsMenuLegacyDialogsHistogramMenu.png&quot; 
+alt = &quot;SPSS data window with data and Histogram menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Which variable would you like to move to the &quot;Variable(s)&quot; section?
+[[PairID2]]
+[[CC_SurfaceArea2]]
+[[IQ_FullScale2]]
+[[HeadCircumference2]]</tw-passagedata><tw-passagedata pid="127" name="CC_SurfaceArea2" tags="" position="2665,932" size="100,100">You&#39;ve made a histogram!
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2OutputSurfaceAreaHistogram.png&quot; 
+alt = &quot;SPSS data window with data&quot; 
+align = &quot;right&quot; 
+width = &quot;1075&quot; 
+height = &quot;660&quot;&gt;
+
+
+Double check to make sure you used the correct variable. 
+If this looks right to you, take a screenshot and paste this into your lab to submit!
+Then, [[move on to the next step-&gt;Start]] if you have more to do!
+
+If this doesn&#39;t look right or you used the wrong variable, select a different variable: 
+[[PairID2]]
+[[BirthOrder2]]
+[[IQ_FullScale2]]
+[[HeadCircumference2]]</tw-passagedata><tw-passagedata pid="128" name="IQ_FullScale2" tags="" position="2770,931" size="100,100">You&#39;ve made a histogram!
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2OutputIQHistogram.png&quot; 
+alt = &quot;SPSS data window with data&quot; 
+align = &quot;right&quot; 
+width = &quot;1075&quot; 
+height = &quot;660&quot;&gt;
+
+
+Double check to make sure you used the correct variable. 
+If this looks right to you, take a screenshot and paste this into your lab to submit!
+Then, [[move on to the next step-&gt;Start]] if you have more to do!
+
+If this doesn&#39;t look right or you used the wrong variable, select a different variable: 
+[[PairID2]]
+[[BirthOrder2]]
+[[CC_SurfaceArea2]]
+[[HeadCircumference2]]</tw-passagedata><tw-passagedata pid="129" name="HeadCircumference2" tags="" position="2876,931" size="100,100">You&#39;ve made a histogram!
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2OutputHeadCircumferenceHistogram.png&quot; 
+alt = &quot;SPSS data window with data&quot; 
+align = &quot;right&quot; 
+width = &quot;1075&quot; 
+height = &quot;660&quot;&gt;
+
+Double check to make sure you used the correct variable. 
+If this looks right to you, take a screenshot and paste this into your lab to submit!
+Then, [[move on to the next step-&gt;Start]] if you have more to do!
+
+If this doesn&#39;t look right or you used the wrong variable, select a different variable: 
+[[PairID2]]
+[[BirthOrder2]]
+[[IQ_FullScale2]]
+[[CC_SurfaceArea2]] </tw-passagedata><tw-passagedata pid="130" name="Yes25" tags="" position="245,952" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]</tw-passagedata><tw-passagedata pid="131" name="Yes26" tags="" position="366,951" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]</tw-passagedata><tw-passagedata pid="132" name="Yes27" tags="" position="482,955" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[Data-&gt;Data4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]</tw-passagedata><tw-passagedata pid="133" name=" Yes28" tags="" position="593,954" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]</tw-passagedata><tw-passagedata pid="134" name=" Yes29" tags="" position="700,953" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]</tw-passagedata><tw-passagedata pid="135" name=" Yes30" tags="" position="824,983" size="100,100">That&#39;s right!
+
+What do you want to click on next?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis-&gt;Power Analysis2]]
+[[Reports-&gt;Reports2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Tables-&gt;Tables2]]
+[[Compare Means-&gt;Compare Means2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Correlate-&gt;Correlate2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="136" name=" Yes31" tags="" position="939,952" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]] 
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Utilities-&gt;Utilities4]]
+[[Extensions-&gt;Extensions4]]</tw-passagedata><tw-passagedata pid="137" name="Power Analysis2" tags="" position="1376,1067" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Reports-&gt;Reports2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Tables-&gt;Tables2]]
+[[Compare Means-&gt;Compare Means2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Correlate-&gt;Correlate2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="138" name="Reports2" tags="" position="1484,1066" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis-&gt;Power Analysis2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Tables-&gt;Tables2]]
+[[Compare Means-&gt;Compare Means2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Correlate-&gt;Correlate2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="139" name="Descriptive Statistics2" tags="" position="1589,1092" size="100,100">&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Is this right?
+[[Yes, I see what I need to click on next.-&gt;YesDSDesc]]
+
+No, instead go to: 
+[[Power Analysis-&gt;Power Analysis2]]
+[[Reports-&gt;Reports2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Tables-&gt;Tables2]]
+[[Compare Means-&gt;Compare Means2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Correlate-&gt;Correlate2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="140" name="Bayesian Statistics2" tags="" position="1693,1066" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis-&gt;Power Analysis2]]
+[[Reports-&gt;Reports2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Tables-&gt;Tables2]]
+[[Compare Means-&gt;Compare Means2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Correlate-&gt;Correlate2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="141" name="Tables2" tags="" position="1796,1064" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis-&gt;Power Analysis2]]
+[[Reports-&gt;Reports2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Compare Means-&gt;Compare Means2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Correlate-&gt;Correlate2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="142" name="Compare Means2" tags="" position="1899,1066" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis-&gt;Power Analysis2]]
+[[Reports-&gt;Reports2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Tables-&gt;Tables2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Correlate-&gt;Correlate2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="143" name="General Linear Model2" tags="" position="2002,1066" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis-&gt;Power Analysis2]]
+[[Reports-&gt;Reports2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Tables-&gt;Tables2]]
+[[Compare Means-&gt;Compare Means2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Correlate-&gt;Correlate2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="144" name="Generalized Linear Models2" tags="" position="2106,1066" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis-&gt;Power Analysis2]]
+[[Reports-&gt;Reports2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Tables-&gt;Tables2]]
+[[Compare Means-&gt;Compare Means2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Correlate-&gt;Correlate2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="145" name="Mixed Models2" tags="" position="2210,1066" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis-&gt;Power Analysis2]]
+[[Reports-&gt;Reports2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Tables-&gt;Tables2]]
+[[Compare Means-&gt;Compare Means2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Correlate-&gt;Correlate2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="146" name="Correlate2" tags="" position="2312,1065" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis-&gt;Power Analysis2]]
+[[Reports-&gt;Reports2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Tables-&gt;Tables2]]
+[[Compare Means-&gt;Compare Means2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Regression-&gt;Regression2]]</tw-passagedata><tw-passagedata pid="147" name="Regression2" tags="" position="2414,1064" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenu.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Power Analysis-&gt;Power Analysis2]]
+[[Reports-&gt;Reports2]]
+[[Descriptive Statistics-&gt;Descriptive Statistics2]]
+[[Bayesian Statistics-&gt;Bayesian Statistics2]]
+[[Tables-&gt;Tables2]]
+[[Compare Means-&gt;Compare Means2]]
+[[General Linear Model-&gt;General Linear Model2]]
+[[Generalized Linear Models-&gt;Generalized Linear Models2]]
+[[Mixed Models-&gt;Mixed Models2]]
+[[Correlate-&gt;Correlate2]]</tw-passagedata><tw-passagedata pid="148" name=" Yes32" tags="" position="1065,953" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Extensions-&gt;Extensions4]]</tw-passagedata><tw-passagedata pid="149" name=" Yes33" tags="" position="1186,952" size="100,100">Sorry, your next step isn&#39;t here! 
+
+Learning SPSS is a process.
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File4]]
+[[Edit-&gt;Edit4]]
+[[View-&gt;View4]]
+[[Data-&gt;Data4]]
+[[Transform-&gt;Transform4]]
+[[Analyze-&gt;Analyze4]]
+[[Graphs-&gt;Graphs4]]
+[[Utilities-&gt;Utilities4]]</tw-passagedata><tw-passagedata pid="150" name="File5" tags="" position="244,1369" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="151" name="Edit5" tags="" position="364,1368" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="152" name="View5" tags="" position="478,1369" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="153" name="Data5" tags="" position="588,1368" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="154" name="Transform5" tags="" position="699,1369" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="155" name="Analyze5" tags="" position="825,1367" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="156" name="Graphs5" tags="" position="942,1368" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="157" name="Utilities5" tags="" position="1064,1365" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="158" name="Extensions5" tags="" position="1184,1367" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="159" name="Scatter Plot" tags="" position="125,1126.5" size="100,100">Ok, make a &#39;&#39;scatter plot&#39;&#39;. 
+
+To make a scatter plot, what should you click on first? 
+(Note that clicking on a word below the picture will open up the SPSS menu for that option.)
+
+&lt;img src=&quot;SPSSaltEmptyDataWindowCrop.png&quot; 
+alt = &quot;empty SPSS data window&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[File-&gt;File6]]
+[[Edit-&gt;Edit6]]
+[[View-&gt;View6]]
+[[Data-&gt;Data6]]
+[[Transform-&gt;Transform6]]
+[[Analyze-&gt;Analyze6]]
+[[Graphs-&gt;Graphs6]]
+[[Utilities-&gt;Utilities6]]
+[[Extensions-&gt;Extensions6]]
+
+[[Go back to start over-&gt;Start]]</tw-passagedata><tw-passagedata pid="160" name="File6" tags="" position="247,1100.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="161" name="Edit6" tags="" position="369,1097.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="162" name="View6" tags="" position="488,1098.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="163" name="Data6" tags="" position="598,1100.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="164" name="Transform6" tags="" position="705,1101" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="165" name="Analyze6" tags="" position="825,1099.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="166" name="Graphs6" tags="" position="946,1103" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="167" name="Extensions6" tags="" position="1199,1103" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="168" name="Utilities6" tags="" position="1072,1101.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="169" name="YesDSDesc" tags="" position="1597,1215" size="100,100">Yes!
+
+What&#39;s next?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies-&gt;Frequencies2]]
+[[Descriptives-&gt;Descriptives2]]
+[[Explore-&gt;Explore2]]
+[[Crosstabs-&gt;Crosstabs2]]
+[[TURF Analysis-&gt;TURF Analysis2]]
+[[Ratio-&gt;Ratio2]]
+[[P-P Plots-&gt;P-P Plots2]]
+[[Q-Q Plots-&gt;Q-Q Plots2]]</tw-passagedata><tw-passagedata pid="170" name="Frequencies2" tags="" position="2431,1206" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Descriptives-&gt;Descriptives2]]
+[[Explore-&gt;Explore2]]
+[[Crosstabs-&gt;Crosstabs2]]
+[[TURF Analysis-&gt;TURF Analysis2]]
+[[Ratio-&gt;Ratio2]]
+[[P-P Plots-&gt;P-P Plots2]]
+[[Q-Q Plots-&gt;Q-Q Plots2]]</tw-passagedata><tw-passagedata pid="171" name="Descriptives2" tags="" position="2552,1236" size="100,100">That&#39;s right!
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2DataDescriptiveStatsMenu.png&quot; 
+alt = &quot;SPSS data window with data and Frequencies menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Which variable would you like to move to the &quot;Variable(s)&quot; section?
+(Note that in SPSS, you can move multiple variables at once, but you&#39;ll have to do one at a time here.)
+[[PairID-&gt;PairID3]]
+[[BirthOrder-&gt;BirthOrder3]]
+[[CC_SurfaceArea-&gt;CC SurfaceArea3]]
+[[IQ_FullScale-&gt;IQ FullScale3]]
+[[HeadCircumference-&gt;HeadCircumference3]]</tw-passagedata><tw-passagedata pid="172" name="Explore2" tags="" position="2657,1205" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies-&gt;Frequencies2]]
+[[Descriptives-&gt;Descriptives2]]
+[[Crosstabs-&gt;Crosstabs2]]
+[[TURF Analysis-&gt;TURF Analysis2]]
+[[Ratio-&gt;Ratio2]]
+[[P-P Plots-&gt;P-P Plots2]]
+[[Q-Q Plots-&gt;Q-Q Plots2]]</tw-passagedata><tw-passagedata pid="173" name="Crosstabs2" tags="" position="2765,1205" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies-&gt;Frequencies2]]
+[[Descriptives-&gt;Descriptives2]]
+[[Explore-&gt;Explore2]]
+[[TURF Analysis-&gt;TURF Analysis2]]
+[[Ratio-&gt;Ratio2]]
+[[P-P Plots-&gt;P-P Plots2]]
+[[Q-Q Plots-&gt;Q-Q Plots2]]</tw-passagedata><tw-passagedata pid="174" name="TURF Analysis2" tags="" position="2873,1206" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies-&gt;Frequencies2]]
+[[Descriptives-&gt;Descriptives2]]
+[[Explore-&gt;Explore2]]
+[[Crosstabs-&gt;Crosstabs2]]
+[[Ratio-&gt;Ratio2]]
+[[P-P Plots-&gt;P-P Plots2]]
+[[Q-Q Plots-&gt;Q-Q Plots2]]</tw-passagedata><tw-passagedata pid="175" name="Ratio2" tags="" position="2979,1204" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies-&gt;Frequencies2]]
+[[Descriptives-&gt;Descriptives2]]
+[[Explore-&gt;Explore2]]
+[[Crosstabs-&gt;Crosstabs2]]
+[[TURF Analysis-&gt;TURF Analysis2]]
+[[P-P Plots-&gt;P-P Plots2]]
+[[Q-Q Plots-&gt;Q-Q Plots2]]</tw-passagedata><tw-passagedata pid="176" name="P-P Plots2" tags="" position="3084,1203" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies-&gt;Frequencies2]]
+[[Descriptives-&gt;Descriptives2]]
+[[Explore-&gt;Explore2]]
+[[Crosstabs-&gt;Crosstabs2]]
+[[TURF Analysis-&gt;TURF Analysis2]]
+[[Ratio-&gt;Ratio2]]
+[[Q-Q Plots-&gt;Q-Q Plots2]]</tw-passagedata><tw-passagedata pid="177" name="Q-Q Plots2" tags="" position="3191,1203" size="100,100">Sorry, this isn&#39;t right...
+
+What do you want to try instead?
+&lt;img src=&quot;SPSSaltEmptyDataWindowAnalyzeMenuDescriptiveStatistics.png&quot; 
+alt = &quot;empty SPSS data window with analyze menu open and descriptive statistics sub menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+[[Frequencies-&gt;Frequencies2]]
+[[Descriptives-&gt;Descriptives2]]
+[[Explore-&gt;Explore2]]
+[[Crosstabs-&gt;Crosstabs2]]
+[[TURF Analysis-&gt;TURF Analysis2]]
+[[Ratio-&gt;Ratio2]]
+[[P-P Plots-&gt;P-P Plots2]]</tw-passagedata><tw-passagedata pid="178" name="PairID3" tags="" position="2453,1342" size="100,100">Try again: 
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2DataDescriptiveStatsMenu.png&quot; 
+alt = &quot;SPSS data window with data and Frequencies menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Which variable would you like to move to the &quot;Variable(s)&quot; section?
+(Note that in SPSS, you can move multiple variables at once, but you&#39;ll have to do one at a time here.)
+[[BirthOrder-&gt;BirthOrder3]]
+[[CC_SurfaceArea-&gt;CC SurfaceArea3]]
+[[IQ_FullScale-&gt;IQ FullScale3]]
+[[HeadCircumference-&gt;HeadCircumference3]]</tw-passagedata><tw-passagedata pid="179" name="BirthOrder3" tags="" position="2557,1340" size="100,100">Try again: 
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2DataDescriptiveStatsMenu.png&quot; 
+alt = &quot;SPSS data window with data and Frequencies menu open&quot; 
+align = &quot;right&quot; 
+width = &quot;1320&quot; 
+height = &quot;660&quot;&gt;
+
+Which variable would you like to move to the &quot;Variable(s)&quot; section?
+(Note that in SPSS, you can move multiple variables at once, but you&#39;ll have to do one at a time here.)
+[[PairID-&gt;PairID3]]
+[[CC_SurfaceArea-&gt;CC SurfaceArea3]]
+[[IQ_FullScale-&gt;IQ FullScale3]]
+[[HeadCircumference-&gt;HeadCircumference3]]</tw-passagedata><tw-passagedata pid="180" name="HeadCircumference3" tags="" position="2872,1368" size="100,100">Here are your descriptive stats:
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2OutputHeadCircumferenceDescriptives.png&quot; 
+alt = &quot;SPSS data window with data&quot; 
+align = &quot;right&quot; 
+width = &quot;1000&quot; 
+height = &quot;400&quot;&gt;
+
+
+Double check to make sure you used the correct variable. 
+If this looks right to you, take a screenshot and paste this into your lab to submit!
+
+If this doesn&#39;t look right or you used the wrong variable, or if you have another variable you need descriptive statistics for, select a different variable: 
+[[PairID-&gt;PairID3]]
+[[BirthOrder-&gt;BirthOrder3]]
+[[CC_SurfaceArea-&gt;CC SurfaceArea3]]
+[[IQ_FullScale-&gt;IQ FullScale3]]
+
+If you&#39;re done with descriptive statistics, you can also [[move on to the next step-&gt;Start]] if you have more to do!</tw-passagedata><tw-passagedata pid="181" name="CC SurfaceArea3" tags="" position="2667,1372" size="100,100">Here are your descriptive stats:
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2OutputSurfaceAreaDescriptives.png&quot; 
+alt = &quot;SPSS data window with data&quot; 
+align = &quot;right&quot; 
+width = &quot;1000&quot; 
+height = &quot;500&quot;&gt;
+
+
+Double check to make sure you used the correct variable. 
+If this looks right to you, take a screenshot and paste this into your lab to submit!
+
+If this doesn&#39;t look right or you used the wrong variable, or if you have another variable you need descriptive statistics for, select a different variable: 
+[[PairID-&gt;PairID3]]
+[[BirthOrder-&gt;BirthOrder3]]
+[[IQ_FullScale-&gt;IQ FullScale3]]
+[[HeadCircumference-&gt;HeadCircumference3]]
+
+If you&#39;re done with descriptive statistics, you can also [[move on to the next step-&gt;Start]] if you have more to do!</tw-passagedata><tw-passagedata pid="182" name="IQ FullScale3" tags="" position="2768,1371" size="100,100">Here are your descriptive stats:
+
+&lt;img src=&quot;SPSSaltRN2021SPSS1and2OutputIQDescriptives.png&quot; 
+alt = &quot;SPSS data window with data&quot; 
+align = &quot;right&quot; 
+width = &quot;1075&quot; 
+height = &quot;660&quot;&gt;
+
+
+Double check to make sure you used the correct variable. 
+If this looks right to you, take a screenshot and paste this into your lab to submit!
+
+If this doesn&#39;t look right or you used the wrong variable, or if you have another variable you need descriptive statistics for, select a different variable: 
+[[PairID-&gt;PairID3]]
+[[BirthOrder-&gt;BirthOrder3]]
+[[CC_SurfaceArea-&gt;CC SurfaceArea3]]
+[[HeadCircumference-&gt;HeadCircumference3]]
+
+If you&#39;re done with descriptive statistics, you can also [[move on to the next step-&gt;Start]] if you have more to do!</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
